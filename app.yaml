@@ -1,0 +1,16 @@
+runtime: php
+env: flex
+
+runtime_config:
+  document_root: public
+  enable_stackdriver_integration: true
+
+skip_files:
+ - .env
+
+env_variables:
+  APP_ENV: production
+  LOG_CHANNEL: stackdriver
+  APP_KEY: base64:OyRyhnePtvpzDqCQz6SplMf/T8cvBIuiJp3jt8VjPxo=
+  APP_STORAGE: /tmp
+
